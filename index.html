@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <title>PokeDexDeLuchoo</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="functions.js" defer></script>
+
+    <!-- script de Google Fonts-->    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!--Script de boockstrap de js Y css-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <!--Navbar de boockstrap-->
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+  <div class="bg-dark p-4">
+  <h5 class="text-body-emphasis h4">Links</h5>
+  <a href="http://instagram.com/lucho0_06/" target="_blank" class="text-body-secondary d-block mb-2">
+      Instagram 
+  </a>
+  <a href="https://pokeapi.co/" target="_blank" class="text-body-secondary d-block mb-2">
+      API utilizada 
+  </a>
+  <a href="https://giphy.com/" target="_blank" class="text-body-secondary d-block mb-2">
+      Tienda De Gifs 
+  </a>
+
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+  
+
+<!--Logo princiapl de pokemon -->
+  <img id="LogoPrincipal" href="#" target="blank" src="imagenes/pokemon-23.svg" alt="Logo de Pokémon"/>
+
+  <!--Titulo de la pagina-->
+  <h1 class="titulo">Busca Un Pokemon</h1>
+
+
+   <!--div para orden de imagenes-->
+  <div class="row">
+
+
+    <!-- Columna izquierda -->
+    <div class="col-6 d-flex flex-column align-items-start">
+      <img class="images" src="imagenes/gifpikachu.gif" class="mb-3" alt="--">
+      <img class="images" src="imagenes/gifpokemontoortuga.gif" class="mb-3" alt="--">
+      <img class="images" src="imagenes/gifpokemon.gif" class="mb-3" alt="--">
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="col-6 d-flex flex-column align-items-end">
+      <img class="images" src="imagenes/equiprocket.gif" class="mb-3" alt="--">
+      <img class="images" src="imagenes/gif2.gif" class="mb-3" alt="--">
+      <img  class="images" src="imagenes/paraponerconelash.gif" class="mb-3" alt="">
+    </div>
+  </div>
+
+  <!--codigo para mostrar la pokedex-->
+
+<div id="pokedextryhard" class="container text-center my-5">
+  <h1>Pokédex</h1>
+  <input type="text" id="pokemonInput" placeholder=" Escribe un Nombre o número" class="form-control w-25 mx-auto" />
+  <button onclick="buscarPokemon()" class="btn btn-primary mt-2">Buscar</button>
+
+  <div id="resultado" class="mt-4"></div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <div class="container">
+    <small>© 2025 Pokédex hecha por Lucho Rodríguez — ActividadParaJap <a href="https://jovenesaprogramar.edu.uy/" class="text-info text-decoration-none" target="_blank">EntraAqui</a></small>
+  </div>
+</footer>
+
+
+</body>
+</html>
